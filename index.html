@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mayur Maheshwari | IAS</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Modern Editorial Fonts: Playfair Display (Serif) & Inter (Sans-Serif) -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&family=Great+Vibes&display=swap"
+        rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="icon" href="mayur_pic.jpg" type="image/jpeg">
+</head>
+
+<body class="navy-theme">
+
+    <div class="noise-overlay"></div>
+
+    <nav class="navbar">
+        <div class="brand">
+            <img src="mayur_pic.jpg" alt="Mayur Maheshwari" class="brand-img">
+            <span>Mayur Maheshwari</span>
+        </div>
+        <div class="nav-links">
+            <a href="#about-detailed">About</a>
+            <a href="#impact">Impact</a>
+            <a href="#journey">Journey</a>
+            <a href="#media">Leadership</a>
+            <a href="#connect">Connect</a> <!-- Added Link -->
+            <a href="#events">Media & Events</a> <!-- Added Link -->
+            <!-- Social Icons -->
+            <div class="nav-social-icons" style="display: flex; gap: 1rem; margin-left: 1rem; align-items: center;">
+                <a href="https://iasmayurmaheshwari.com/" target="_blank" aria-label="Official Website"
+                    style="color: var(--text-primary);"><i data-lucide="globe"
+                        style="width: 20px; height: 20px;"></i></a>
+                <a href="https://twitter.com/mayurias" target="_blank" aria-label="Twitter"
+                    style="color: var(--text-primary);"><i data-lucide="twitter"
+                        style="width: 20px; height: 20px;"></i></a>
+                <a href="https://www.linkedin.com/in/mayur-maheshwari-ias-8b1b1b1b/" target="_blank"
+                    aria-label="LinkedIn" style="color: var(--text-primary);"><i data-lucide="linkedin"
+                        style="width: 20px; height: 20px;"></i></a>
+            </div>
+        </div>
+
+        <button class="search-btn" aria-label="Search">
+            <i data-lucide="search"></i>
+        </button>
+
+        <button class="mobile-menu-btn" aria-label="Toggle Menu">
+            <i data-lucide="menu"></i>
+        </button>
+    </nav>
+
+    <!-- Floating Action Button -->
+    <a href="#connect" class="fab-connect" aria-label="Connect with Mayur">
+        <i data-lucide="message-circle"></i>
+    </a>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu">
+        <a href="#about-detailed" onclick="toggleMenu()">About</a>
+        <a href="#impact" onclick="toggleMenu()">Impact</a>
+        <a href="#journey" onclick="toggleMenu()">Journey</a>
+        <a href="#media" onclick="toggleMenu()">Leadership</a>
+        <a href="#connect" onclick="toggleMenu()">Connect</a>
+        <a href="#events" onclick="toggleMenu()">Media & Events</a>
+    </div>
+
+    <div class="search-overlay">
+        <div class="search-container">
+            <input type="text" placeholder="Search insights, policies, or events..." class="search-input">
+            <button class="close-search"><i data-lucide="x"></i></button>
+        </div>
+    </div>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="about" class="hero-section">
+            <div class="hero-text-container">
+                <p class="hero-label">UPSC AIR 6 | IAS Officer (2003 Batch) | UP Cadre</p>
+                <h1 class="hero-name">Mayur <br> <span class="text-highlight">Maheshwari</span></h1>
+                <p class="hero-description">
+                    Architecting <strong>National Scale Impact</strong> through <strong>Policy Innovation</strong> &
+                    <strong>Digital Transformation</strong>.
+                    Currently <strong>MD</strong>, UP Power Transmission Corporation Ltd.
+                </p>
+                <a href="#journey" class="scroll-down">
+                    <span>View Impact Journey</span>
+                </a>
+            </div>
+            <div class="hero-visual">
+                <!-- Video Embed: User Provided Source -->
+                <!-- Extracted Photos Slideshow -->
+                <div class="hero-slideshow-container"
+                    style="position: relative; width: 100%; height: 100%; min-height: 100vh; overflow: hidden;">
+                    <img src="image1.jpeg" class="hero-slide active" alt="Mayur Maheshwari 1">
+                    <img src="image2.jpeg" class="hero-slide" alt="Mayur Maheshwari 2">
+                    <img src="image3.jpeg" class="hero-slide" alt="Mayur Maheshwari 3">
+                    <img src="image4.jpeg" class="hero-slide" alt="Mayur Maheshwari 4">
+                    <img src="image5.jpeg" class="hero-slide" alt="Mayur Maheshwari 5">
+                    <img src="image6.jpeg" class="hero-slide" alt="Mayur Maheshwari 6">
+                    <img src="image7.jpeg" class="hero-slide" alt="Mayur Maheshwari 7">
+                    <img src="image8.jpeg" class="hero-slide" alt="Mayur Maheshwari 8">
+                    <img src="image9.jpeg" class="hero-slide" alt="Mayur Maheshwari 9">
+
+                    <!-- Overlay for aesthetic blend -->
+                    <div class="video-overlay"
+                        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 10; background: radial-gradient(circle at center, transparent 0%, var(--bg-dark) 100%); pointer-events: none;">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Department/Logos Banner (Text Representation) -->
+        <div class="department-ticker">
+            <span class="dept-name">Prime Minister's Office</span>
+            <span class="dept-dot">•</span>
+            <span class="dept-name">UPSIDA</span>
+            <span class="dept-dot">•</span>
+            <span class="dept-name">UP Power Corporation</span>
+            <span class="dept-dot">•</span>
+            <span class="dept-name">United Nations (Awardee)</span>
+            <span class="dept-dot">•</span>
+            <span class="dept-name">Election Commission</span>
+        </div>
+
+        <!-- Detailed About Section -->
+        <section id="about-detailed" class="about-detailed-section fade-up">
+            <div class="about-container">
+                <div class="about-content">
+                    <h2 class="about-heading">About the Administrator</h2>
+                    <p class="about-text">
+                        <strong>Mayur Maheshwari</strong> is an accomplished Indian Administrative Service (IAS) officer
+                        of the 2003 Batch (UP Cadre) with over two decades of distinguished service in strategic
+                        governance, large-scale infrastructure development, and economic policy formulation.
+                    </p>
+                    <p class="about-text">
+                        Currently serving as the <strong>Managing Director</strong> of Uttar Pradesh Power Transmission
+                        Corporation Limited (UPPTCL) and UP Rajya Vidyut Utpadan Nigam Limited (UPRVUNL), he is
+                        spearheading the modernization of the state's power infrastructure. Previously, as <strong>CEO
+                            of UPSIDA</strong>, he curated a land bank of 70,000+ acres and attracted nearly
+                        <strong>₹3.5 Lakh Crore</strong> in investment, fundamentally reshaping the industrial landscape
+                        of Uttar Pradesh.
+                    </p>
+                    <p class="about-text">
+                        His tenure at the <strong>Prime Minister’s Office (PMO)</strong> as Deputy Secretary and
+                        Director was marked by critical policy interventions, including the <strong>100% Neem Coated
+                            Urea Policy</strong>, the launch of the <strong>BHIM App</strong>, and the
+                        <strong>Government e-Marketplace (GeM)</strong>. A technocrat at heart (B.Tech, Textile
+                        Technology), he combines administrative depth with technological foresight to deliver
+                        "Governance Reimagined". His current focus is on building robust infrastructure to support Uttar
+                        Pradesh's
+                        vision of becoming a <strong>Trillion Dollar Economy</strong>.
+                    </p>
+
+                    <div class="core-tenets">
+                        <div class="tenet">
+                            <h4>Vision</h4>
+                            <p>Sustainable development through digital capability building.</p>
+                        </div>
+                        <div class="tenet">
+                            <h4>Strategy</h4>
+                            <p>Data-driven policy formulation for measurable impact.</p>
+                        </div>
+                        <div class="tenet">
+                            <h4>Execution</h4>
+                            <p>Transparent, time-bound delivery of public services.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bento Grid Stats Section -->
+        <section id="impact" class="impact-section">
+            <div class="section-title">
+                <h2>Administrative Impact</h2>
+                <p>Quantifiable achievements across two decades.</p>
+            </div>
+
+            <div class="bento-grid">
+                <!-- Investment -->
+                <div class="bento-item large highlight-accent">
+                    <div class="stat-number">₹3.53</div>
+                    <h3>Lakh Cr Investment</h3>
+                    <p class="bento-desc">Orchestrated investment intents during <strong>UP Global Investors Summit
+                            2023</strong>, positioning Uttar Pradesh as a premier global investment destination.</p>
+                </div>
+
+                <!-- Revenue -->
+                <div class="bento-item large">
+                    <div class="stat-number">234%</div>
+                    <h3>Revenue Growth</h3>
+                    <p class="bento-desc">Drove UPSIDA operating revenue from <strong>₹577 Cr to ₹1,351 Cr</strong> (FY
+                        2019–24) through financial discipline, transparent allotments, and digitization.</p>
+                </div>
+
+                <!-- Employment -->
+                <div class="bento-item medium">
+                    <div class="icon-box"><i data-lucide="users"></i></div>
+                    <h3>10 Lakh+</h3>
+                    <p class="bento-desc"><strong>Jobs Created.</strong> Catalyzed direct and indirect employment across
+                        155+ industrial areas.</p>
+                </div>
+
+                <!-- Irrigation -->
+                <div class="bento-item medium">
+                    <div class="icon-box"><i data-lucide="droplets"></i></div>
+                    <h3>65.5 Lakh</h3>
+                    <p class="bento-desc"><strong>Hectares Irrigated.</strong> Expanded critical irrigation potential,
+                        ensuring water security for millions of farmers.</p>
+                </div>
+
+                <!-- Land Reform (New) -->
+                <div class="bento-item medium">
+                    <div class="icon-box"><i data-lucide="map"></i></div>
+                    <h3>15,000+</h3>
+                    <p class="bento-desc"><strong>Acres Audited.</strong> Revolutionized land management using
+                        <strong>Drones & AI</strong> to reclaim dormant industrial plots.
+                    </p>
+                </div>
+
+                <!-- Healthcare Innovation (New) -->
+                <div class="bento-item medium">
+                    <div class="icon-box"><i data-lucide="heart-pulse"></i></div>
+                    <h3>"Aarogyam"</h3>
+                    <p class="bento-desc"><strong>UN Award Winner.</strong> Created India's first digital health mapping
+                        initiative (Patent: 6/DEL/2010).</p>
+                </div>
+
+                <!-- National Policy (New) -->
+                <div class="bento-item wide">
+                    <div class="icon-box"><i data-lucide="file-text"></i></div>
+                    <h3>National Policy Reform</h3>
+                    <p class="bento-desc">Instrumental in the <strong>100% Neem Coated Urea Policy</strong> (2015) at
+                        the PMO, stopping diversion and saving ₹10,000 Cr in subsidies annually.</p>
+                </div>
+
+                <!-- Projects (New) -->
+                <div class="bento-item medium">
+                    <div class="stat-number">3,300+</div>
+                    <h3>Projects Grounded</h3>
+                    <p class="bento-desc">Operationalized UPSIDA projects worth <strong>₹1.5 Lakh Cr</strong> during GBC
+                        2024.</p>
+                </div>
+
+                <!-- Farmers (New) -->
+                <div class="bento-item large highlight-accent">
+                    <div class="stat-number">2.33 Cr</div>
+                    <h3>Farmers Benefitted</h3>
+                    <p class="bento-desc">Ensured transparent subsidy flow to families via the <strong>Pardarshi Kisan
+                            Seva Yojana</strong>.</p>
+                </div>
+
+                <!-- Health (New) -->
+                <div class="bento-item medium">
+                    <div class="stat-number">100%</div>
+                    <h3>Immunization</h3>
+                    <p class="bento-desc">Achieved total coverage in <strong>AES/JE Vaccination Drive</strong> as DM
+                        Azamgarh & Baghpat.</p>
+                </div>
+
+                <!-- Finance (New) -->
+                <div class="bento-item medium">
+                    <div class="stat-number">32%</div>
+                    <h3>PAT CAGR</h3>
+                    <p class="bento-desc">Driving Profit After Tax from <strong>₹233 Cr to ₹736 Cr</strong> at UPSIDA.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Media & News Coverage -->
+        <section id="news" class="media-section fade-up">
+            <div class="section-title">
+                <h2>In The Headlines</h2>
+                <p>Media coverage of administrative milestones and policy impact.</p>
+            </div>
+
+            <!-- Featured News (Top 3 Stories) -->
+            <div class="news-grid">
+                <!-- 1. MD Power Transmission (Current Role) -->
+                <div class="news-card glass-panel magnetic-btn">
+                    <div class="news-image-container">
+                        <img src="news_grid.jpg" alt="Power Transmission Grid" class="news-img">
+                        <div class="news-overlay">
+                            <span class="news-source">India Today</span>
+                        </div>
+                    </div>
+                    <div class="news-content">
+                        <span class="news-date">Oct 30, 2025</span>
+                        <h3>Mayur Maheshwari Appointed MD of UP Power Transmission</h3>
+                        <p class="news-snippet">In a major bureaucratic reshuffle, the UP government entrusts Maheshwari
+                            with modernizing the state's power grid infrastructure.</p>
+                        <a href="https://www.indiatoday.in/" class="read-more" target="_blank">Read Article <i
+                                data-lucide="arrow-up-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- 2. Global Investors Summit (Major Achievement) -->
+                <div class="news-card glass-panel magnetic-btn">
+                    <div class="news-image-container">
+                        <img src="news_summit.jpg" alt="Global Investors Summit" class="news-img">
+                        <div class="news-overlay">
+                            <span class="news-source">Outlook Business</span>
+                        </div>
+                    </div>
+                    <div class="news-content">
+                        <span class="news-date">Feb 14, 2023</span>
+                        <h3>UPSIDA signs ₹3.5 Lakh Cr MoUs at Global Investors Summit</h3>
+                        <p class="news-snippet">Under the leadership of CEO Mayur Maheshwari, UPSIDA attracted record
+                            investment proposals, positioning UP as a trillion-dollar economy contender.</p>
+                        <a href="https://www.outlookbusiness.com/" class="read-more" target="_blank">Read Article <i
+                                data-lucide="arrow-up-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- 3. UN Award (International Recognition) -->
+                <div class="news-card glass-panel magnetic-btn">
+                    <div class="news-image-container">
+                        <img src="news_award.jpg" alt="UN Award Ceremony" class="news-img">
+                        <div class="news-overlay">
+                            <span class="news-source">UN Public Service</span>
+                        </div>
+                    </div>
+                    <div class="news-content">
+                        <span class="news-date">June 2012</span>
+                        <h3>"Aarogyam" Wins United Nations Public Service Award</h3>
+                        <p class="news-snippet">District Administration's digital health initiative receives global
+                            recognition for excellence in public service delivery.</p>
+                        <a href="https://publicadministration.un.org/" class="read-more" target="_blank">Read Article <i
+                                data-lucide="arrow-up-right"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Detailed Press Archive List (Clean & Compact) -->
+            <div class="press-archive glass-panel fade-up">
+                <h3><i data-lucide="archive"></i> Media & Press Archive</h3>
+                <ul class="press-list">
+                    <li>
+                        <a href="#" class="archive-link">
+                            <span class="archive-date">Sep 2025</span>
+                            <span class="archive-title">Chai Pe Charcha: Candid Conversation with IAS Mayur
+                                Maheshwari</span>
+                            <span class="archive-source">Economic Times</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="archive-link">
+                            <span class="archive-date">Jul 2022</span>
+                            <span class="archive-title">IAS Success Story: The Role of NCERT Books in Preparation</span>
+                            <span class="archive-source">ABP Live</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="archive-link">
+                            <span class="archive-date">Oct 2021</span>
+                            <span class="archive-title">Revamping Industrial Infrastructure: The UPSIDA Roadmap</span>
+                            <span class="archive-source">Times of India</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="archive-link">
+                            <span class="archive-date">Jun 2020</span>
+                            <span class="archive-title">Bureaucratic Excellence: Key Policy Contributions at PMO</span>
+                            <span class="archive-source">PSU Watch</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="archive-link">
+                            <span class="archive-date">May 2025</span>
+                            <span class="archive-title">UPSIDA & IIT-BHU pact to boost industrial innovation</span>
+                            <span class="archive-source">The Times of India</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="archive-link">
+                            <span class="archive-date">Apr 2025</span>
+                            <span class="archive-title">Infrastructure becomes Engine of UP's Growth: UPSIDA Income
+                                surges</span>
+                            <span class="archive-source">Amar Ujala</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="archive-link">
+                            <span class="archive-date">Aug 2024</span>
+                            <span class="archive-title">UP Launches ₹6,191 Cr Industrial Infrastructure Push</span>
+                            <span class="archive-source">Business Standard</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Professional Journey ("The Technocrat Narrative") -->
+        <section id="journey" class="journey-section">
+            <div class="section-title">
+                <h2>The Professional Journey</h2>
+                <p>A Technocrat's Path to Administrative Excellence.</p>
+            </div>
+
+            <div class="timeline-container">
+                <div class="timeline-line"></div>
+
+                <!-- 2025: Current Role -->
+                <div class="timeline-row">
+                    <div class="timeline-time">Oct 2025 - Present</div>
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-panel">
+                        <h3>Managing Director</h3>
+                        <h4>UP Power Transmission Corporation Ltd & UPRVUNL</h4>
+                        <p>Leading the strategic modernization of Uttar Pradesh's power transmission and thermal
+                            generation infrastructure.</p>
+                    </div>
+                </div>
+
+                <!-- UPSIDA -->
+                <div class="timeline-row">
+                    <div class="timeline-time">Transforming Industry</div>
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-panel">
+                        <h3>Chief Executive Officer</h3>
+                        <h4>UPSIDA</h4>
+                        <p>Managed 155 industrial areas and revolutionized land bank management using <strong>drone
+                                surveys and AI</strong>.</p>
+                    </div>
+                </div>
+
+                <!-- PMO -->
+                <div class="timeline-row">
+                    <div class="timeline-time">Driving National Impact</div>
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-panel">
+                        <h3>Director</h3>
+                        <h4>Prime Minister's Office (PMO)</h4>
+                        <p>Driven national policy. Instrumental in the launch of the <strong>BHIM App</strong>,
+                            <strong>GeM Portal</strong>, and <strong>New Urea Policy 2015</strong>.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Healthcare Pioneer -->
+                <div class="timeline-row">
+                    <div class="timeline-time">Healthcare Pioneer</div>
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-panel">
+                        <h3>Creator of "Aarogyam"</h3>
+                        <h4>Digital Health Initiative</h4>
+                        <p>India's first digital health mapping initiative. <strong>UN Award Winner</strong>.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Awards & Recognition -->
+        <section id="awards" class="awards-section" style="padding: 6rem 5%;">
+            <div class="section-title">
+                <h2>Awards & Recognition</h2>
+                <p>Global acknowledgment of administrative innovation.</p>
+            </div>
+            <div class="bento-grid">
+                <!-- UN Award -->
+                <div class="bento-item medium glass-panel">
+                    <div class="icon-box"><i data-lucide="globe"></i></div>
+                    <h3>UN Public Service Delivery Award</h3>
+                    <p class="bento-desc">2012. For "Aarogyam".</p>
+                </div>
+                <!-- ECI Award -->
+                <div class="bento-item medium glass-panel">
+                    <div class="icon-box"><i data-lucide="award"></i></div>
+                    <h3>Best District Magistrate Award</h3>
+                    <p class="bento-desc">Election Commission of India, 2012.</p>
+                </div>
+                <!-- E-Gov Award -->
+                <div class="bento-item medium glass-panel">
+                    <div class="icon-box"><i data-lucide="monitor"></i></div>
+                    <h3>National E-Governance Award</h3>
+                    <p class="bento-desc">2011.</p>
+                </div>
+                <!-- Education -->
+                <div class="bento-item medium glass-panel">
+                    <div class="icon-box"><i data-lucide="book-open"></i></div>
+                    <h3>Education</h3>
+                    <p class="bento-desc">MBA (Finance) & B.Tech (Textile Technology).</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Thought Leadership (Redesigned) -->
+        <section id="media" class="leadership-section">
+            <div class="section-title">
+                <h2>Thought Leadership</h2>
+                <p>Sharing insights at global forums.</p>
+            </div>
+
+            <div class="leadership-grid">
+                <div class="leadership-visual">
+                    <img src="images.jpg" alt="Mayur Maheshwari Speaking" class="leadership-img">
+                </div>
+                <div class="leadership-content">
+                    <ul class="venue-list">
+                        <li>
+                            <span class="venue-name">The Hague, Netherlands</span>
+                            <span class="venue-desc">International governance forum on Digital Policy.</span>
+                        </li>
+                        <li>
+                            <span class="venue-name">Syracuse University, NY</span>
+                            <span class="venue-desc">Guest lecture on Indian Administrative Reforms.</span>
+                        </li>
+                        <li>
+                            <span class="venue-name">IIT Delhi</span>
+                            <span class="venue-desc">Keynote on Technology in Public Service.</span>
+                        </li>
+                        <li>
+                            <span class="venue-name">LBSNAA Mussoorie</span>
+                            <span class="venue-desc">Training future IAS officers on Ethics & Governance.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <!-- Upcoming Events / Media Section -->
+        <section id="events" class="events-section">
+            <div class="section-title">
+                <h2>Live & Upcoming</h2>
+                <p>Join the conversation on governance and technology.</p>
+            </div>
+
+            <div class="events-grid">
+                <!-- Event Card 1 -->
+                <div class="event-card glass-panel">
+                    <div class="event-date">
+                        <span class="day">20</span>
+                        <span class="month">DEC</span>
+                    </div>
+                    <div class="event-details">
+                        <div class="event-badges">
+                            <span class="badge podcast">Podcast</span>
+                            <span class="badge upcoming">Upcoming</span>
+                        </div>
+                        <h3>The Future of Digital India</h3>
+                        <p class="event-host">Hosted by <strong>TechPolicy India</strong></p>
+                        <p class="event-desc">Discussing the roadmap for AI-driven land reforms and transparent
+                            governance.</p>
+                        <a href="#" class="event-link">Set Reminder <i data-lucide="bell"></i></a>
+                    </div>
+                </div>
+
+                <!-- Event Card 2 -->
+                <div class="event-card glass-panel">
+                    <div class="event-date">
+                        <span class="day">15</span>
+                        <span class="month">JAN</span>
+                    </div>
+                    <div class="event-details">
+                        <div class="event-badges">
+                            <span class="badge keynote">Keynote Speaker</span>
+                        </div>
+                        <h3>Infrastructure Summit 2026</h3>
+                        <p class="event-host">New Delhi • <strong>FICCI Auditorium</strong></p>
+                        <p class="event-desc">Topic: "Powering UP: The next phase of transmission grid modernization."
+                        </p>
+                        <a href="#" class="event-link">Register Now <i data-lucide="external-link"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Connect / Contact Form Section -->
+        <section id="connect" class="connect-section">
+            <div class="section-title">
+                <h2>Want to Connect?</h2>
+                <p>Reach out for speaking engagements or policy discussions.</p>
+            </div>
+
+            <div class="connect-container">
+                <form class="connect-form" action="mailto:mayur.maheshwari@example.com" method="post"
+                    enctype="text/plain">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" placeholder="John Doe" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" placeholder="+91 98765 43210" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="john@company.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject"
+                            placeholder="Speaking Opportunity / Policy Discussion" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="details">Details of Discussion</label>
+                        <textarea id="details" name="details" rows="5"
+                            placeholder="Please describe the purpose of your query..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-btn btn-primary">
+                        Send Message <i data-lucide="arrow-right"></i>
+                    </button>
+                </form>
+
+                <div class="connect-info glass-panel">
+                    <h3>Contact Information</h3>
+
+
+                    <div class="info-item">
+                        <i data-lucide="mail"></i>
+                        <div>
+                            <span>Email</span>
+                            <a href="mailto:ceo@upsida.co.in">ceo@upsida.co.in</a>
+                            <span
+                                style="display: block; font-size: 0.75rem; color: var(--text-muted); margin-top: 0.2rem;">(To
+                                be added)</span>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <i data-lucide="linkedin"></i>
+                        <div>
+                            <span>LinkedIn</span>
+                            <a href="https://www.linkedin.com/in/mayur-maheshwari-ias-8b1b1b1b/" target="_blank">View
+                                Profile</a>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <i data-lucide="twitter"></i>
+                        <div>
+                            <span>Twitter</span>
+                            <a href="https://twitter.com/mayurias" target="_blank">@MayurIAS</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="site-footer">
+                <p class="disclaimer-text"
+                    style="font-size: 0.8rem; color: var(--text-muted); margin-bottom: 1rem; opacity: 0.8;">
+                    This constitutes a personal knowledge initiative and is not an official government portal.
+                </p>
+                <div class="copyright">
+                    &copy; 2025 Mayur Maheshwari. All Rights Reserved.
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <script src="script.js"></script>
+    <script>lucide.createIcons();</script>
+</body>
+
+</html>
